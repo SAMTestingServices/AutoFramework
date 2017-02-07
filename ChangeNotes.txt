@@ -1,0 +1,67 @@
+v1.n.n
+
+Updated:
+	* 
+
+Added:
+	* 
+
+Removed:
+	* 
+
+----------------------------------
+v1.3.0
+
+Updated:
+	* Renamed the Defects folder to Bugs
+	* Updated all Feature files to a consistent style and layout
+
+Added:
+	* Choco local install used to get both Pickles packages
+	* Pickles and Pickles UI to generate Pickles reporting
+	* Change Notes file
+
+Removed:
+	* Experimental batch file for SpecFlow report generation, replaced by Pickles
+
+----------------------------------
+v 1.2.0
+
+Updated:
+	* Converted LoginTestSteps.cs to LoginToDRFosterSteps.cs
+
+Added:
+	* HUB000 and HUB514 Feature files in Bugs\Features
+	* LoginToDRFoster feature file in Workflows\Features
+	* DropDownCheck.feature file for regression testing relatred to monthly data drops
+
+Removed:
+	* Experimental batch file for NUnit report generation, replaced by ReportGenerator.cs
+
+----------------------------------
+v 1.1.0
+
+Updated:
+	* Sharedbasis - Browser list now called from Enumeration list in Common\BrowserList.cs
+
+Added:
+	* SpecFlow
+	* Site URL list is now drawn from common\ListofSiteURLs.cs
+	* TakeScreenshot.cs in \Helpers
+
+Removed:
+	* n/a
+----------------------------------
+v 1.0.0
+
+Updated:
+	* no updates - initial version
+
+Added:
+	* Folder structure
+	* Driver.cs in \Common
+	* LoginTestSteps in Workflows\Steps
+	* LoginPage.cs to \Pages
+
+Removed:
+	* n/a
