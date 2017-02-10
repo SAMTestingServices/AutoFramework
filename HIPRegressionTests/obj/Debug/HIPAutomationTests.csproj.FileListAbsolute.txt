@@ -1,0 +1,15 @@
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\HIPTargetedRegression.dll
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\nunit.framework.dll
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\TechTalk.SpecFlow.dll
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\WebDriver.dll
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\WebDriver.Support.dll
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\HIPTargetedRegression.pdb
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\nunit.framework.xml
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\WebDriver.xml
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\WebDriver.Support.xml
+C:\Dev\test-automation\HIPRegressionTests\obj\Debug\HIPAutomationTests.csprojResolveAssemblyReference.cache
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\HIPAutomationTests.dll.config
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\HIPAutomationTests.dll
+C:\Dev\test-automation\HIPRegressionTests\bin\Debug\HIPAutomationTests.pdb
+C:\Dev\test-automation\HIPRegressionTests\obj\Debug\HIPAutomationTests.dll
+C:\Dev\test-automation\HIPRegressionTests\obj\Debug\HIPAutomationTests.pdb

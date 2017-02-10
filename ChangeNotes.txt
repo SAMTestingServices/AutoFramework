@@ -1,13 +1,17 @@
-v1.n.n
+v1.4.0
 
 Updated:
-	* 
+	* Namespaces and some folder names: HIPAutomationTests > HubAutomationTests
+	* Renamed Pages to HUBPages to start breaking out page object folders into products
+	* Moved HUB tests to HIPAutomationTests folder
+	* Moved SharedBasis.cs to Common folder
 
 Added:
-	* 
+	* New Unit test project - HIPAutomationTests
+	* New folder called HIPPages
 
 Removed:
-	* 
+	* SitePages.cs as we don't need to simplify page names at this time
 
 ----------------------------------
 v1.3.0
@@ -37,6 +41,7 @@ Added:
 
 Removed:
 	* Experimental batch file for NUnit report generation, replaced by ReportGenerator.cs
+	* Removed Herobrine
 
 ----------------------------------
 v 1.1.0

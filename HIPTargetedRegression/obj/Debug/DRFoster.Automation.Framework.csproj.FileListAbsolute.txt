@@ -1,0 +1,11 @@
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\HIPTargetedRegression.dll.config
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\HIPTargetedRegression.dll
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\HIPTargetedRegression.pdb
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\nunit.framework.dll
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\WebDriver.dll
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\WebDriver.Support.dll
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\nunit.framework.xml
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\WebDriver.xml
+C:\Dev\test-automation\HIPTargetedRegression\bin\Debug\WebDriver.Support.xml
+C:\Dev\test-automation\HIPTargetedRegression\obj\Debug\HIPTargetedRegression.dll
+C:\Dev\test-automation\HIPTargetedRegression\obj\Debug\HIPTargetedRegression.pdb

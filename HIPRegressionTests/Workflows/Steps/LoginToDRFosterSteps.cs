@@ -1,9 +1,9 @@
 ﻿using System;
 using TechTalk.SpecFlow;
-using HIPTargettedRegression.Pages;
-using HIPTargettedRegression.Common;
+using DRFosterAutomationFramework.HUBPages;
+using DRFosterAutomationFramework.Common;
 
-namespace HIPRegressionTests.Workflows.Steps
+namespace HUBAutomationTests.Workflows.Steps
 {
     [Binding]
     public class LoginToDRFosterSteps : SharedBasis

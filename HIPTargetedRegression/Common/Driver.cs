@@ -5,7 +5,7 @@ using OpenQA.Selenium.IE;
 using System;
 using System.Drawing;
 
-namespace HIPTargettedRegression.Common
+namespace DRFosterAutomationFramework.Common
 {
    
     public class Driver

@@ -1,9 +1,8 @@
-﻿using HIPTargettedRegression.Pages;
+﻿using DRFosterAutomationFramework.HUBPages;
+using DRFosterAutomationFramework.Common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HIPTargettedRegression.Common;
-using System.Configuration;
 
-namespace HIPRegressionTests.Workflows.Steps
+namespace HUBAutomationTests.Workflows.Steps
 {
     [TestClass]
     public class LoginTestSteps : SharedBasis
@@ -14,7 +13,7 @@ namespace HIPRegressionTests.Workflows.Steps
             LoginPage.GoToHomePage();
             LoginPage.CheckWeHitTheRightPage();
 
-            // TODO: b) Encrypt/Decrypt the username and password to be more secure
+            // TODO: Encrypt/Decrypt the username and password to be more secure
             LoginPage.LoginAs(UserList.adminUser).WithPassword(UserList.adminPassword).EnterLoginDetails();
 
             LoginPage.DoLogin();

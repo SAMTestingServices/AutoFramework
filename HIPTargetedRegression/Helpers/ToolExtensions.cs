@@ -1,12 +1,10 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HIPTargettedRegression.Helpers
+// TODO: Custom selectors not currently used as all standard selenium selectors are working for the framework
+
+namespace DRFosterAutomationFramework.Helpers
 {
     public class ToolExtensions
     {

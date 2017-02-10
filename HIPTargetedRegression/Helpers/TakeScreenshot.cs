@@ -1,9 +1,9 @@
-﻿using HIPTargettedRegression.Common;
+﻿using DRFosterAutomationFramework.Common;
 using OpenQA.Selenium;
 using System;
 using System.Drawing.Imaging;
 
-namespace HIPTargettedRegression.Helpers
+namespace DRFosterAutomationFramework.Helpers
 {
     class TakeScreenshot
     {

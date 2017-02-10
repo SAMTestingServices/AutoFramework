@@ -1,0 +1,9 @@
+C:\Dev\test-automation\HIPAutomationPages\bin\Debug\HIPAutomationPages.dll
+C:\Dev\test-automation\HIPAutomationPages\bin\Debug\HIPAutomationPages.pdb
+C:\Dev\test-automation\HIPAutomationPages\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Dev\test-automation\HIPAutomationPages\obj\Debug\HIPAutomationPages.csprojResolveAssemblyReference.cache
+C:\Dev\test-automation\HIPAutomationPages\obj\Debug\HIPAutomationPages.dll
+C:\Dev\test-automation\HIPAutomationPages\obj\Debug\HIPAutomationPages.pdb
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\obj\Debug\HIPAutomationPages.csprojResolveAssemblyReference.cache
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\obj\Debug\HIPAutomationPages.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\obj\Debug\HIPAutomationPages.pdb

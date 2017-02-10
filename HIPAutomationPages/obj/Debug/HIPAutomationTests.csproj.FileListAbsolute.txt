@@ -1,0 +1,16 @@
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\obj\Debug\HIPAutomationPages.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\obj\Debug\HIPAutomationPages.pdb
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\obj\Debug\HIPAutomationTests.csprojResolveAssemblyReference.cache
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\HIPAutomationPages.dll.config
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\HIPAutomationPages.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\HIPAutomationPages.pdb
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\HIPTargetedRegression.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\nunit.framework.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\TechTalk.SpecFlow.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\WebDriver.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\WebDriver.Support.dll
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\HIPTargetedRegression.pdb
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\nunit.framework.xml
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\WebDriver.xml
+D:\Dev\C#\AutomationFramework\HIPAutomationPages\bin\Debug\WebDriver.Support.xml

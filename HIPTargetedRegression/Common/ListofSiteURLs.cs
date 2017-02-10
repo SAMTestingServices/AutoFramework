@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Threading;
-
-namespace HIPTargettedRegression.Helpers
+﻿namespace DRFosterAutomationFramework.Common
 {
     public class AddressList
     {
