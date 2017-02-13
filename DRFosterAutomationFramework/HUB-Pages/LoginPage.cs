@@ -1,12 +1,7 @@
 ﻿using DRFosterAutomationFramework.Common;
 using DRFosterAutomationFramework.Helpers;
-using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DRFosterAutomationFramework.HUBPages
 {
