@@ -25,4 +25,4 @@ Scenario: The user wants to export a report to pdf
 	When I click generate report
 	Then a new browser window opens that contains the pdf file
 
-	# add scenarios for remaining items
+# add scenarios for remaining items
