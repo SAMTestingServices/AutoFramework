@@ -76,7 +76,7 @@
     <Compile Include="Workflows\Steps\LoginToDRFosterSteps.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HIPTargetedRegression\DRFosterAutomationFramework.csproj">
+    <ProjectReference Include="..\DRFosterAutomationFramework\DRFosterAutomationFramework.csproj">
       <Project>{18fbf6d7-4f2c-485a-992e-ee0482e10b99}</Project>
       <Name>DRFosterAutomationFramework</Name>
     </ProjectReference>
