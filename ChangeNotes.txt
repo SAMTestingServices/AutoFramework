@@ -1,7 +1,19 @@
+v1.4.1
+
+Updated:
+	* Renamed project folders to match the Visual Studio project names
+
+Added:
+	* Added HUB514 and HUB000 Feature files back
+
+Removed:
+	* Orphaned HUB-514 Feature and Feature.cs file
+	* Orphaned HUB-514 Steps file
+----------------------------------
 v1.4.0
 
 Updated:
-	* Namespaces and some folder names: HIPAutomationTests > HubAutomationTests
+	* Namespaces and some folder names: HIPAutomationTests > HUBAutomationTests
 	* Renamed Pages to HUBPages to start breaking out page object folders into products
 	* Moved HUB tests to HIPAutomationTests folder
 	* Moved SharedBasis.cs to Common folder
@@ -12,7 +24,6 @@ Added:
 
 Removed:
 	* SitePages.cs as we don't need to simplify page names at this time
-
 ----------------------------------
 v1.3.0
 
