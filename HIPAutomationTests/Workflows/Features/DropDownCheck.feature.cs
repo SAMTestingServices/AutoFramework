@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace HIPAutomationPages.Workflows.Features
+namespace HIPAutomationTests.Workflows.Features
 {
     using TechTalk.SpecFlow;
     
