@@ -3,7 +3,7 @@ using DRFosterAutomationFramework.Helpers;
 using OpenQA.Selenium;
 using System;
 
-namespace DRFosterAutomationFramework.HUBPages
+namespace DRFosterAutomationFramework.HUB_Pages
 {
     public class LoginPage
     {
