@@ -1,4 +1,4 @@
-﻿using DRFosterAutomationFramework.HUBPages;
+﻿using DRFosterAutomationFramework.HUB_Pages;
 using DRFosterAutomationFramework.Common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
