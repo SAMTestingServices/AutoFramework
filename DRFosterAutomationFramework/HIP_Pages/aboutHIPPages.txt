@@ -1,0 +1,4 @@
+﻿About HIP Pages
+---------------
+The design of the framework is to split out the Framework, Tests and Page Objects into individual Visual Studio Projects.
+Knowledge of HIP functionality (what elements exist, how to find them, to interact with them, etc.) is in the Pages files.
