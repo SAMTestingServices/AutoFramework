@@ -1,0 +1,16 @@
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\eMBEDAutomationTests.dll.config
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\eMBEDAutomationTests.dll
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\eMBEDAutomationTests.pdb
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\nunit.framework.dll
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\TechTalk.SpecFlow.dll
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\WebDriver.dll
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\WebDriver.Support.dll
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\nunit.framework.xml
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\WebDriver.xml
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\WebDriver.Support.xml
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\obj\Debug\eMBEDAutomationTests.csprojResolveAssemblyReference.cache
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\obj\Debug\eMBEDAutomationTests.dll
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\obj\Debug\eMBEDAutomationTests.pdb
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\DRFosterAutomationFramework.dll
+C:\Dev\test-automation\test-automation\eMBEDAutomationTests\bin\Debug\DRFosterAutomationFramework.pdb
