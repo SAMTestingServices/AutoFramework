@@ -23,7 +23,8 @@ namespace DRFosterAutomationFramework.Helpers
                 var timeNow = DateTime.Now.TimeOfDay.ToString().Replace(@"/", "").Replace(@" ", "").Replace(@":", "").Replace(@".", "");
                 timeNow = timeNow.Substring(0, 6);
 
-                var fileName = String.Format("C:\\Dev\\HIPTargetedRegression\\TestResults\\Screenshots\\{0}_{1}.png", dateNow, timeNow);
+                // TODO: Change this file location to a relative one once the solution is deployed
+                var fileName = String.Format("C:\\Dev\\test-automation\\test-automation\\testResults\\Screenshots\\{0}_{1}.png", dateNow, timeNow);
                 Console.WriteLine("The screenshot was taken. Please check in the Screenshots folder for: {0}", fileName);
 
                 var screenShot = TakeScreenShot();
