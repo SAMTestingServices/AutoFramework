@@ -1,7 +1,7 @@
 ﻿using DRFosterAutomationFramework.Common;
 using DRFosterAutomationFramework.Helpers;
-using System;
 using OpenQA.Selenium;
+using System;
 
 // Navigate to the eMBED log-in page, do the log-in and confirm we end up at the right page.
 

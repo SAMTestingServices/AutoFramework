@@ -3,6 +3,8 @@ using DRFosterAutomationFramework.Helpers;
 using OpenQA.Selenium;
 using System;
 
+// Page presented to a user post log-in
+
 namespace DRFosterAutomationFramework.eMBED_Pages
 {
    public class eMBEDDashboardPage
@@ -11,7 +13,7 @@ namespace DRFosterAutomationFramework.eMBED_Pages
         {
             var mainNavigation = Driver.Instance.FindElement(By.Id("main-navigation"));
 
-            if (mainNavigation != null) // TODO: change this to an assert of the ID, check what it actually returns first
+            if (mainNavigation != null) // TODO: change this to an assert of the ID? Check what it actually returns first
             {
                 Console.WriteLine("I found the main-navigation element by its ID");
             }
@@ -23,6 +25,5 @@ namespace DRFosterAutomationFramework.eMBED_Pages
                 throw new Exception(mainNavigationException);
             }
         }
-
     }
 }
