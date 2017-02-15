@@ -1,6 +1,8 @@
-﻿using DRFosterAutomationFramework.HUB_Pages;
-using DRFosterAutomationFramework.Common;
+﻿using DRFosterAutomationFramework.Common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DRFosterAutomationFramework.HUBPages;
+
+// Log-in Smoke test without SpecFlow
 
 namespace HUBAutomationTests.Workflows.Steps
 {
