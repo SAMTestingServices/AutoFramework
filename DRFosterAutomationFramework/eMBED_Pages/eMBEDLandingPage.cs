@@ -1,6 +1,9 @@
 ﻿using DRFosterAutomationFramework.Common;
 using DRFosterAutomationFramework.Helpers;
 using System;
+using OpenQA.Selenium;
+
+// Navigate to the eMBED log-in page, do the log-in and confirm we end up at the right page.
 
 namespace DRFosterAutomationFramework.eMBED_Pages
 {
@@ -11,10 +14,21 @@ namespace DRFosterAutomationFramework.eMBED_Pages
             Driver.Instance.Navigate().GoToUrl(AddressList.embedTestUrl);
         }
 
-        public static void LogInToEmbed()
+        public static void EnterLoginDetails()
         {
-            
+            var loginInput = Driver.Instance.FindElement(By.Id("username-email"));
+            loginInput.SendKeys(UserList.eMBED005Username);
+
+            var passwordInput = Driver.Instance.FindElement(By.Id("password"));
+            passwordInput.SendKeys(UserList.eMBED005Password);
         }
+
+        public static void DoLogin()
+        {
+            var loginButton = Driver.Instance.FindElement(By.ClassName("btn"));
+            loginButton.Click();
+        }
+
 
         public static void ConfirmWeAreLoggedInToTheEmbedHomePage()
         {
