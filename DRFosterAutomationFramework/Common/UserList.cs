@@ -2,6 +2,9 @@
 {
     public class UserList
     {
+
+        // for use in HUB
+
         public static string adminUser
         {
             get { return "mcrowther"; }
@@ -11,6 +14,12 @@
             get { return "LxzYZTL@3KjX!$yV"; }
         }
 
+        // For use in eMbed
+
+        //public const string AdminUserName = "AdminUserName";
+        //public const string AdminPassword = "AdminPassword";
+
+        // stop using the below, start using the above
         public static string eMBED005Username
         {
             get { return "mcrowther"; }
