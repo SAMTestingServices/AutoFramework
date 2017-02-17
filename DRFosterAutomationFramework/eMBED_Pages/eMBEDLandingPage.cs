@@ -32,6 +32,14 @@ namespace DRFosterAutomationFramework.eMBED_Pages
 
         public static void ConfirmWeAreLoggedInToTheEmbedHomePage()
         {
+
+            //Driver.Instance.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
+            
+            //var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(60));
+            //wait.Until((wdriver) =>
+            //   (wdriver as IJavaScriptExecutor).ExecuteScript("return document.readyState").Equals("complete")
+            //);
+
             var expectedPageTitle = "Dashboard - embed";
             var actualPageTitle = Driver.Instance.Title;
 
