@@ -37,6 +37,7 @@ namespace DRFosterAutomationFramework.Common
             }
             Instance.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
             Instance.Manage().Window.Size = new Size(1015, 1300);
+            Instance.Manage().Window.Position = new Point(150, 0);
         }
 
 // ############ After LaunchTheBrowser() runs, an Instance of the chosen browser is initialised #############
