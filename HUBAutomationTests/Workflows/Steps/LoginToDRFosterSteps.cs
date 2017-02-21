@@ -1,8 +1,8 @@
 ﻿using DRFosterAutomationFramework.Common;
 using DRFosterAutomationFramework.HUBPages;
+using System;
 using System.Configuration;
 using TechTalk.SpecFlow;
-using System;
 
 namespace HUBAutomationTests.Workflows.Steps
 {
