@@ -18,7 +18,7 @@ namespace HUBAutomationTests.Workflows.Steps
         [When(@"I enter my username and password")]
         public void WhenIEnterMyUsernameAndPassword()
         {
-            LoginPage.LoginAs(UserList.adminUser).WithPassword(UserList.adminPassword).EnterLoginDetails();
+            //LoginPage.LoginAs(UserList.adminUser).WithPassword(UserList.adminPassword).EnterLoginDetails();
         }
         
         [When(@"I click on the login button")]
