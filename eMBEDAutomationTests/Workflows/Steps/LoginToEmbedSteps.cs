@@ -29,6 +29,7 @@ namespace eMBEDAutomationTests.Workflows.Steps
         [Then(@"I am logged into the eMbed dashboard page")]
         public void ThenIAmLoggedIntoTheEMbedDashboardPage()
         {
+            Extensions.WaitForPageToLoad();
             eMBEDLandingPage.ConfirmWeAreLoggedInToTheEmbedHomePage();
         }
     }

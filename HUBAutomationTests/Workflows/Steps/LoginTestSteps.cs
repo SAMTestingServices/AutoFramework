@@ -18,8 +18,8 @@ namespace HUBAutomationTests.Workflows.Steps
             LoginPage.CheckWeHitTheRightPage();
 
             LoginPage
-                .LoginAs(ConfigurationManager.AppSettings[UserList.AdminUsernameFromAppConfig])
-                .WithPassword(ConfigurationManager.AppSettings[UserList.AdminPasswordFromAppConfig].Decrypt())
+                .LoginAs(ConfigurationManager.AppSettings[UserList.HUBAdminUsername])
+                .WithPassword(ConfigurationManager.AppSettings[UserList.HUBAdminPassword].Decrypt())
                 .EnterLoginDetails();
 
             LoginPage.DoLogin();

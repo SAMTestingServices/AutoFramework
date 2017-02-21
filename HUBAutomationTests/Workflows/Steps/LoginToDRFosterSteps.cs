@@ -1,6 +1,8 @@
-﻿using TechTalk.SpecFlow;
+﻿using DRFosterAutomationFramework.Common;
 using DRFosterAutomationFramework.HUBPages;
-using DRFosterAutomationFramework.Common;
+using System.Configuration;
+using TechTalk.SpecFlow;
+using System;
 
 namespace HUBAutomationTests.Workflows.Steps
 {
@@ -18,7 +20,10 @@ namespace HUBAutomationTests.Workflows.Steps
         [When(@"I enter my username and password")]
         public void WhenIEnterMyUsernameAndPassword()
         {
-            //LoginPage.LoginAs(UserList.adminUser).WithPassword(UserList.adminPassword).EnterLoginDetails();
+            LoginPage
+                .LoginAs(ConfigurationManager.AppSettings[UserList.HUBAdminUsername])
+                .WithPassword(ConfigurationManager.AppSettings[UserList.HUBAdminPassword].Decrypt())
+                .EnterLoginDetails();
         }
         
         [When(@"I click on the login button")]

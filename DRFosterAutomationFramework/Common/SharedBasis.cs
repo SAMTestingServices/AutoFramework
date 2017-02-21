@@ -19,7 +19,7 @@ namespace DRFosterAutomationFramework.Common
         {
             Console.WriteLine("Test Cleanup was called.");
             
-            // TODO: ReportGen needs refactoring to produce Pickles docs
+            // TODO: Report generation needs putting in place to produce Pickles docs
             // ReportGenerator.OutputNUnitToSpecFlow();
 
             // Driver.ClearCookies();

@@ -3,8 +3,8 @@
     public class UserList
     {
         //For use in HUB
-        public const string AdminUsernameFromAppConfig = "AdminUsername";
-        public const string AdminPasswordFromAppConfig = "AdminPassword";
+        public const string HUBAdminUsername = "AdminUsername";
+        public const string HUBAdminPassword = "AdminPassword";
 
         //For use in eMBED
         public const string EMBED005Username = "EMBED005Username";

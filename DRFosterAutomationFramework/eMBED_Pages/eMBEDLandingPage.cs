@@ -2,6 +2,7 @@
 using DRFosterAutomationFramework.Helpers;
 using OpenQA.Selenium;
 using System;
+using System.Configuration;
 
 // Navigate to the eMBED log-in page, do the log-in and confirm we end up at the right page.
 
@@ -17,10 +18,10 @@ namespace DRFosterAutomationFramework.eMBED_Pages
         public static void EnterLoginDetails()
         {
             var loginInput = Driver.Instance.FindElement(By.Id("username-email"));
-            loginInput.SendKeys(UserList.eMBED005Username);
+            loginInput.SendKeys(ConfigurationManager.AppSettings[UserList.EMBED005Username]);
 
             var passwordInput = Driver.Instance.FindElement(By.Id("password"));
-            passwordInput.SendKeys(UserList.eMBED005Password);
+            passwordInput.SendKeys(ConfigurationManager.AppSettings[UserList.EMBED005Password].Decrypt());
         }
 
         public static void DoLogin()
@@ -28,19 +29,10 @@ namespace DRFosterAutomationFramework.eMBED_Pages
             var loginButton = Driver.Instance.FindElement(By.ClassName("btn"));
             loginButton.Click();
         }
-
-
+        
         public static void ConfirmWeAreLoggedInToTheEmbedHomePage()
         {
-
-            //Driver.Instance.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
-            
-            //var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(60));
-            //wait.Until((wdriver) =>
-            //   (wdriver as IJavaScriptExecutor).ExecuteScript("return document.readyState").Equals("complete")
-            //);
-
-            var expectedPageTitle = "Dashboard - embed";
+            var expectedPageTitle = "Dashboard - eMbed";
             var actualPageTitle = Driver.Instance.Title;
 
             if (expectedPageTitle == actualPageTitle)

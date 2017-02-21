@@ -25,5 +25,10 @@ namespace DRFosterAutomationFramework.eMBED_Pages
                 throw new Exception(mainNavigationException);
             }
         }
+
+        public static void confirmEmbedTabsArePresent()
+        {
+            //Driver.Instance.FindElements(By.)
+        }
     }
 }
