@@ -1,3 +1,23 @@
+http://semver.org/
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+MAJOR version when you make incompatible API changes or additions of entirely new functionality
+MINOR version when you add functionality in a backwards-compatible manner
+PATCH version when you make backwards-compatible bug fixes or basic refactoring
+
+----------------------------------
+v1.5.0
+
+Updated:
+	* App.config files to include usernames and password instead of UserList, which is now a reference to them
+
+Added:
+	* Encrypted password and use of Decrypt 
+	* WaitForPageToLoad in Common > Extensions.cs
+
+Removed:
+	* n/a
+----------------------------------
 v1.4.1
 
 Updated:
