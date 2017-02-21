@@ -1,6 +1,8 @@
 ﻿using DRFosterAutomationFramework.Common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DRFosterAutomationFramework.HUBPages;
+using System.Configuration;
+using System;
 
 // Log-in Smoke test without SpecFlow
 
@@ -15,8 +17,10 @@ namespace HUBAutomationTests.Workflows.Steps
             LoginPage.GoToHomePage();
             LoginPage.CheckWeHitTheRightPage();
 
-            // TODO: Encrypt/Decrypt the username and password to be more secure
-            LoginPage.LoginAs(UserList.adminUser).WithPassword(UserList.adminPassword).EnterLoginDetails();
+            LoginPage
+                .LoginAs(ConfigurationManager.AppSettings[UserList.AdminUsernameFromAppConfig])
+                .WithPassword(ConfigurationManager.AppSettings[UserList.AdminPasswordFromAppConfig].Decrypt())
+                .EnterLoginDetails();
 
             LoginPage.DoLogin();
             LoginPage.ValidateWeGotLoggedIn();
