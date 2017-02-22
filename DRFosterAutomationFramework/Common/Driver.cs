@@ -36,7 +36,7 @@ namespace DRFosterAutomationFramework.Common
                     break;
             }
             Instance.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(10));
-            Instance.Manage().Window.Size = new Size(1015, 1300);
+            Instance.Manage().Window.Size = new Size(1015, 800);
             Instance.Manage().Window.Position = new Point(200, 0);
         }
 
