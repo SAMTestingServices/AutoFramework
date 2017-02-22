@@ -6,6 +6,22 @@ MINOR version when you add functionality in a backwards-compatible manner
 PATCH version when you make backwards-compatible bug fixes or basic refactoring
 
 ----------------------------------
+v2.0.0
+
+Updated:
+	* First 3 tests for Dashboard checks
+	* SharedBasis.cs - to address running tests in sequence, more to do
+	* Driver.cs - to start building in the ability to run tests in sequence
+	* Extensions.cs - Minor change to layout for readability 
+
+Added:
+	* eMBEDAutomationTests to validate Dashboard page features
+	* eMBED_Pages > eMBED_Elements to have components in such as main navigation
+	* eMBED Steps file for DashboardPage
+
+Removed:
+	* n/a
+----------------------------------
 v1.5.0
 
 Updated:
