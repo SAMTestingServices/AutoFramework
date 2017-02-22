@@ -24,7 +24,7 @@ namespace DRFosterAutomationFramework.Common
 
             // Driver.ClearCookies();
             // Driver.Close();
-            Driver.Quit();
+            // Driver.Quit();
         }
     }
 }
