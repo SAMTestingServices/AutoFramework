@@ -2,6 +2,7 @@
 using DRFosterAutomationFramework.Helpers;
 using OpenQA.Selenium;
 using System;
+using DRFosterAutomationFramework.eMBED_Pages.eMBED_Elements;
 
 // Page presented to a user post log-in
 
@@ -9,7 +10,7 @@ namespace DRFosterAutomationFramework.eMBED_Pages
 {
    public class eMBEDDashboardPage
     {
-        public static void validateMainNavigation()
+        public static void validateMainNavigationIsPresent()
         {
             var mainNavigation = Driver.Instance.FindElement(By.Id("main-navigation"));
 
@@ -26,9 +27,24 @@ namespace DRFosterAutomationFramework.eMBED_Pages
             }
         }
 
-        public static void confirmEmbedTabsArePresent()
+        public static void confirmDashboardTopLinksAreCorrect()
         {
-            //Driver.Instance.FindElements(By.)
+            // TODO: If the Dictionary/Enum approach works, iterate over the others
+            var actualSarValue = Driver.Instance.FindElement(By.LinkText("SAR")).ToString();
+            var ExpectedSarValue = eMBEDDashboardPageItems.TabLinkName[eMBEDNavigation.SAR].ToString();
+
+            if (actualSarValue == ExpectedSarValue)
+            {
+                Console.WriteLine("As expected, I saw '" + ExpectedSarValue + "' in the top navigation.");
+            }
+            else
+            {
+                Console.WriteLine("I could NOT confirm we're on the eMBED Home Page");
+                var topNavigationException = $"I expected ' { ExpectedSarValue } ', but I saw ' { actualSarValue } '.";
+                TakeScreenshot.SaveScreenshot();
+                throw new Exception(topNavigationException);
+            }
+
         }
     }
 }
