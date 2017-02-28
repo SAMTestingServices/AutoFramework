@@ -1,2 +1,6 @@
-xxArchivexx/
 packages/
+testResults/
+DRFosterAutomationFramework/bin
+eMBEDAutomationTests/bin
+HIPAutomationTests/bin
+HUBAutomationTests/bin
