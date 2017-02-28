@@ -1,16 +1,16 @@
-﻿using System;
-using TechTalk.SpecFlow;
+﻿using TechTalk.SpecFlow;
 using DRFosterAutomationFramework.eMBED_Pages;
+using DRFosterAutomationFramework.Common;
 
 namespace eMBEDAutomationTests.Features.Steps
 {
     [Binding]
-    public class ValidateEmbedDashboardPageFeaturesSteps
+    public class ValidateEmbedDashboardPageFeaturesSteps : SharedBasis
     {
         [Given(@"I am logged into eMBED and viewing the Dashboard page")]
         public void GivenIAmLoggedIntoEMBEDAndViewingTheDashboardPage()
         {
-            // TODO: This repeats the last step of the prior test
+            // TODO: This repeats the last step of the prior test. We need to retain state from the previous test
             eMBEDLandingPage.ConfirmWeAreLoggedInToTheEmbedHomePage();
         }
         
