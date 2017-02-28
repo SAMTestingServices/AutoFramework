@@ -66,6 +66,8 @@
     <Compile Include="Common\UserList.cs" />
     <Compile Include="eMBED_Pages\eMBEDDashboardPage.cs" />
     <Compile Include="eMBED_Pages\eMBEDLandingPage.cs" />
+    <Compile Include="eMBED_Pages\eMBED_Elements\eMBEDDashboardPageItems.cs" />
+    <Compile Include="eMBED_Pages\eMBED_Elements\eMBEDNavigation.cs" />
     <Compile Include="Helpers\DecryptString.cs" />
     <Compile Include="Helpers\ReportGenerator.cs" />
     <Compile Include="Helpers\TakeScreenshot.cs" />
@@ -74,9 +76,7 @@
     <Compile Include="HUB_Pages\SitePages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="eMBED_Pages\eMBED_Elements\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

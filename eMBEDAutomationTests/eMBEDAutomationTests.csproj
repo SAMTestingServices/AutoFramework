@@ -60,6 +60,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Features\Features\ValidateEmbedDashboardPageFeatures.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidateEmbedDashboardPageFeatures.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Steps\ValidateEmbedDashboardPageFeaturesSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Workflows\Features\LoginToEmbed.feature.cs">
       <AutoGen>True</AutoGen>
@@ -76,6 +82,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\Features\ValidateEmbedDashboardPageFeatures.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ValidateEmbedDashboardPageFeatures.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="Workflows\Features\LoginToEmbed.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -84,7 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Bugs\" />
-    <Folder Include="Features\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
