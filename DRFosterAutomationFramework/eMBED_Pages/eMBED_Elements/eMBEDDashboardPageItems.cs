@@ -2,36 +2,72 @@
 
 namespace DRFosterAutomationFramework.eMBED_Pages.eMBED_Elements
 {
-    public static class eMBEDDashboardPageItems
+    public class eMBEDDashboardPageItems
     {
-        public const string Logo = "DR Foster Logo";
+        // Top Navigation elements in container-fluid class
 
-        public const string CIM = "COMMISSIONING INSIGHT MANAGER";
+        public static IDictionary<eMBEDTopNavElements, string> NavElementName
+           = new Dictionary<eMBEDTopNavElements, string>
+            {
+                    { eMBEDTopNavElements.Logo, "logo" },
+                    { eMBEDTopNavElements.ApplicationName, "application-name" },
+                    { eMBEDTopNavElements.Welcome, "welcome" },
+                    { eMBEDTopNavElements.OrgSelector, "org-selector" }
+            };
 
-        public const string Welcome = "Welcome";
+        public static IDictionary<eMBEDTopNavLinks, string> LinkTextandLocation
+            = new Dictionary<eMBEDTopNavLinks, string>
+            {
+                    { eMBEDTopNavLinks.LogoLink, "http://testing05/" },
+                    { eMBEDTopNavLinks.LogoText, "" },
+                    { eMBEDTopNavLinks.CIMLink, "http://testing05:50000/mbed" },
+                    { eMBEDTopNavLinks.CIMText, "COMMISSIONING INSIGHT MANAGER" },
+                    { eMBEDTopNavLinks.UsernameLink, "http://testing05/profile/mcrowther" },
+                    { eMBEDTopNavLinks.SignoutLink, "http://testing05/users/account/logoff" },
+                    { eMBEDTopNavLinks.OrgSelectorLink, "" }
+            };
 
-        public const string SignOut = "/logoff";
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        public static IDictionary<string, string> someNameHere
+            = new Dictionary<string, string>
+            {
+                { "COMMISSIONING INSIGHT MANAGER","http://testing05:50000/mbed" }
+            };
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-        public const string OrgSelector = "org-selector";
+        // Second set of links in nav-wrapper class
 
         public const string Filter = "FILTER";
 
-        public static IDictionary<eMBEDNavigation, string> TabLinkName
+        public static IDictionary<eMBEDNavigation, string> TabLinkText
             = new Dictionary<eMBEDNavigation, string>
               {
                     { eMBEDNavigation.SAR, "SAR" },
                     { eMBEDNavigation.RiskStratification, "Risk Stratification" },
+                    { eMBEDNavigation.RiskOverview, "Risk Overview" },
+                    { eMBEDNavigation.RiskStratificationOverview, "Risk Stratification" },
                     { eMBEDNavigation.GPOS, "GPOS" },
-                    { eMBEDNavigation.Performance, "Performance"}
+                    { eMBEDNavigation.Performance, "Performance" }
               };
 
+        public static IDictionary<eMBEDNavigation, string> TabLinkURL
+            = new Dictionary<eMBEDNavigation, string>
+              {
+                    { eMBEDNavigation.SAR, "http://testing05:50000/mbed#/performance" },
+                    { eMBEDNavigation.RiskStratification, "http://testing05:50000/mbed#/riskstratificationoverview" },
+                    { eMBEDNavigation.GPOS, "http://testing05:50000/mbed#/gpos" },
+                    { eMBEDNavigation.Performance, "http://testing05:50000/mbed/performance" }
+              };
+
+// #####################################################################################################
+
+        // Main content area with ID of main
+
         public const string SecondaryCareIndicators = "Secondary Care Indicators";
-
         public const string SarByAcs = "SAR by ACS";
-
         public const string SarByDiagnosis = "SAR by Diagnosis";
-
         public const string Alerting = "Alerting";
+
     }
 
 }
