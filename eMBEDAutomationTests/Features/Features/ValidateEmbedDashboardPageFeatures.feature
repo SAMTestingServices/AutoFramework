@@ -8,25 +8,18 @@ Background:
 
 Scenario: A top navigation section provides links to CIM, account and view settings
 	Given the top navigation elements have loaded
-	Then each <topLink> goes to the <expectedLocation>
-	# Placeholder values here for reference
-	| topLink     | expectedLocation                      |
-	| Logo        | http://testing05/                     |
-	| CIM         | http://testing05:50000/mbed           |
-	| UserName    | http://testing05/profile/mcrowther    |
-	| SignOut     | http://testing05/users/account/logoff |
-	| OrgSelector | org-selector                          |
+	Then each goes to the expected location
 
 Scenario: A Filter element allows users to select month and year range for analysis
-	Given I have clicked on the filter burger icon
+	Given I have clicked on the burger icon
 	When I select a month and year range
 	Then the data returned matches the date range selected
 
 Scenario: A set of navigation links are shown that take the user to relevent dashboard sections 
 	Given the navigation elements are present on the page
-	And the SAR <item> is active
-	And each other <item> is present and inactive but selectable
-	Then they link to the expected <navLocation>
+	And the SAR '<item>' is active
+	And each other '<item>' is present and inactive but selectable
+	Then they link to the expected '<navLocation>'
 	| item        | navLocation                                     |
 	| SAR         | http://testing05:50000/mbed#/performance        |
 	| RiskStrat   | http://testing05:50000/mbed#/riskstratification |

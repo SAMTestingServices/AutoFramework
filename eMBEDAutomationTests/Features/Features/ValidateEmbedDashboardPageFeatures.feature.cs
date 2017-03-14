@@ -86,27 +86,8 @@ this.ScenarioSetup(scenarioInfo);
 this.FeatureBackground();
 #line 10
  testRunner.Given("the top navigation elements have loaded", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "topLink",
-                        "expectedLocation"});
-            table1.AddRow(new string[] {
-                        "Logo",
-                        "http://testing05/"});
-            table1.AddRow(new string[] {
-                        "CIM",
-                        "http://testing05:50000/mbed"});
-            table1.AddRow(new string[] {
-                        "UserName",
-                        "http://testing05/profile/mcrowther"});
-            table1.AddRow(new string[] {
-                        "SignOut",
-                        "http://testing05/users/account/logoff"});
-            table1.AddRow(new string[] {
-                        "OrgSelector",
-                        "org-selector"});
 #line 11
- testRunner.Then("each <topLink> goes to the <expectedLocation>", ((string)(null)), table1, "Then ");
+ testRunner.Then("each goes to the expected location", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -116,15 +97,15 @@ this.FeatureBackground();
         public virtual void AFilterElementAllowsUsersToSelectMonthAndYearRangeForAnalysis()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A Filter element allows users to select month and year range for analysis", ((string[])(null)));
-#line 20
+#line 13
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 21
- testRunner.Given("I have clicked on the filter burger icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 22
+#line 14
+ testRunner.Given("I have clicked on the burger icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 15
  testRunner.When("I select a month and year range", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 23
+#line 16
  testRunner.Then("the data returned matches the date range selected", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -137,34 +118,34 @@ this.FeatureBackground();
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A set of navigation links are shown that take the user to relevent dashboard sect" +
                     "ions", ((string[])(null)));
-#line 25
+#line 18
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 26
+#line 19
  testRunner.Given("the navigation elements are present on the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 27
- testRunner.And("the SAR <item> is active", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
- testRunner.And("each other <item> is present and inactive but selectable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 20
+ testRunner.And("the SAR \'<item>\' is active", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 21
+ testRunner.And("each other \'<item>\' is present and inactive but selectable", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "item",
                         "navLocation"});
-            table2.AddRow(new string[] {
+            table1.AddRow(new string[] {
                         "SAR",
                         "http://testing05:50000/mbed#/performance"});
-            table2.AddRow(new string[] {
+            table1.AddRow(new string[] {
                         "RiskStrat",
                         "http://testing05:50000/mbed#/riskstratification"});
-            table2.AddRow(new string[] {
+            table1.AddRow(new string[] {
                         "GPOS",
                         "http://testing05:50000/mbed#/gpos"});
-            table2.AddRow(new string[] {
+            table1.AddRow(new string[] {
                         "Performance",
                         "http://testing05:50000/mbed/performance"});
-#line 29
- testRunner.Then("they link to the expected <navLocation>", ((string)(null)), table2, "Then ");
+#line 22
+ testRunner.Then("they link to the expected \'<navLocation>\'", ((string)(null)), table1, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -176,15 +157,15 @@ this.FeatureBackground();
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Secondary Care Indicators panel can be expanded to view SAR by ACS and by Diagnos" +
                     "is data", ((string[])(null)));
-#line 36
+#line 29
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 37
+#line 30
  testRunner.Given("I have expanded the Secondary Care Indicators panel", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 38
+#line 31
  testRunner.And("I can see the SAR by ACS and by Diagnosis sections", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 39
+#line 32
  testRunner.Then("I can expand both of these to view the data in each panel section", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -195,25 +176,25 @@ this.FeatureBackground();
         public virtual void AUserCanExportTheInformationOnTheDashboardToPDF()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A user can export the information on the dashboard to PDF", ((string[])(null)));
-#line 41
+#line 34
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 42
+#line 35
  testRunner.Given("I have selected the Export to PDF tool icon in a <panel>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 43
+#line 36
  testRunner.When("a PDF file save dialogue is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                         "panel"});
-            table3.AddRow(new string[] {
+            table2.AddRow(new string[] {
                         "Secondary"});
-            table3.AddRow(new string[] {
+            table2.AddRow(new string[] {
                         "byACS"});
-            table3.AddRow(new string[] {
+            table2.AddRow(new string[] {
                         "byDiagnosis"});
-#line 44
- testRunner.Then("I can save the PDF and get returned to the main screen", ((string)(null)), table3, "Then ");
+#line 37
+ testRunner.Then("I can save the PDF and get returned to the main screen", ((string)(null)), table2, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -223,26 +204,26 @@ this.FeatureBackground();
         public virtual void FooterTextProvidesRequiredCopyrightNoticesAndReferenceLinks()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Footer text provides required copyright notices and reference links", ((string[])(null)));
-#line 51
+#line 44
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 52
+#line 45
  testRunner.Given("the footer has copyright notices and reference links", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 53
+#line 46
  testRunner.Then("the copyright notices should state the current year", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "linkText",
                         "linkLocation"});
-            table4.AddRow(new string[] {
+            table3.AddRow(new string[] {
                         "My DR Foster",
                         "http://testing05:50000/"});
-            table4.AddRow(new string[] {
+            table3.AddRow(new string[] {
                         "Feedback",
                         "OpenUserVoiceDialogue"});
-#line 54
- testRunner.And("reference links should go to the correct locations", ((string)(null)), table4, "And ");
+#line 47
+ testRunner.And("reference links should go to the correct locations", ((string)(null)), table3, "And ");
 #line hidden
             this.ScenarioCleanup();
         }
