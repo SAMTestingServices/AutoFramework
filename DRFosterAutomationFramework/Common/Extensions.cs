@@ -6,7 +6,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace DRFosterAutomationFramework.Common
 {
-    public static class Extensions
+    public class Extensions
     {
         private const int DefaultSleepBeforeRetrySpeed = 50;
 
@@ -20,5 +20,24 @@ namespace DRFosterAutomationFramework.Common
                 .Equals("complete"));
             }
         }
+
+        public static bool IsElementPresent(By by)
+        {
+            try
+            {
+                Driver.Instance.FindElement(by);
+                return true;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
+        public static void CountTheElements()
+        {
+            //
+        }
+
     }
 }
