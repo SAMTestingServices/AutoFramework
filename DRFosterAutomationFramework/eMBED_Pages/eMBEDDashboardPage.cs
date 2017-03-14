@@ -1,50 +1,115 @@
 ﻿using DRFosterAutomationFramework.Common;
+using DRFosterAutomationFramework.eMBED_Pages.eMBED_Elements;
 using DRFosterAutomationFramework.Helpers;
 using OpenQA.Selenium;
 using System;
-using DRFosterAutomationFramework.eMBED_Pages.eMBED_Elements;
+using System.Collections.Generic;
 
 // Page presented to a user post log-in
 
 namespace DRFosterAutomationFramework.eMBED_Pages
 {
-   public class eMBEDDashboardPage
+   public class eMBEDDashboardPage : Extensions
     {
-        public static void validateMainNavigationIsPresent()
+        public static void validateTopBarNavigationIsPresent()
         {
-            var mainNavigation = Driver.Instance.FindElement(By.Id("main-navigation"));
+            bool topNavIdName = Driver.Instance.PageSource.Contains(eMBEDDashboardPageItems.NavElementName[eMBEDTopNavElements.Logo]);
 
-            if (mainNavigation != null) // TODO: change this to an assert of the ID? Check what it actually returns first
+            if (topNavIdName == true)
             {
-                Console.WriteLine("I found the main-navigation element by its ID");
+                Console.WriteLine($"The check for ID of 'logo' being present came back as: {topNavIdName.ToString().ToUpper()}");
             }
             else
             {
-                Console.WriteLine("The Main Navigation element was NOT located on the page");
-                var mainNavigationException = $"I expected to find the main-navigation element, but instead I got {mainNavigation} ";
+                var topBarNavigationException = $"The check for ID 'logo' being present came back as: {topNavIdName.ToString().ToUpper()} but I expected TRUE";
                 TakeScreenshot.SaveScreenshot();
-                throw new Exception(mainNavigationException);
+                throw new Exception(topBarNavigationException);
             }
         }
 
-        public static void confirmDashboardTopLinksAreCorrect()
+        public static void validateTopBarNavigationElements()
         {
-            // TODO: If the Dictionary/Enum approach works, iterate over the others
-            var actualSarValue = Driver.Instance.FindElement(By.LinkText("SAR")).ToString();
-            var ExpectedSarValue = eMBEDDashboardPageItems.TabLinkName[eMBEDNavigation.SAR].ToString();
-
-            if (actualSarValue == ExpectedSarValue)
+            Console.WriteLine("----- Top Bar Navigation Elements -----");
+            foreach (var item in eMBEDDashboardPageItems.NavElementName.Values)
             {
-                Console.WriteLine("As expected, I saw '" + ExpectedSarValue + "' in the top navigation.");
-            }
-            else
-            {
-                Console.WriteLine("I could NOT confirm we're on the eMBED Home Page");
-                var topNavigationException = $"I expected ' { ExpectedSarValue } ', but I saw ' { actualSarValue } '.";
-                TakeScreenshot.SaveScreenshot();
-                throw new Exception(topNavigationException);
-            }
+                if (IsElementPresent(By.Id(item)))
+                {
+                    Console.WriteLine($"As expected, I saw and element with the ID of: {item}");
+                }
+                else
+                {
+                    Console.WriteLine($"I could NOT locate an element with the ID of: {item}");
+                    TakeScreenshot.SaveScreenshot();
+                    var pageNavigationElementException = $"I expected {item} but it was not located";
+                    throw new Exception(pageNavigationElementException);
+                }
 
+            }
         }
+
+        public static void confirmDashboardTabLinksAreCorrect()
+        {
+            foreach (var tabitem in eMBEDDashboardPageItems.TabLinkText.Values)
+            {
+                if (IsElementPresent(By.LinkText(tabitem)))
+                {
+                    Console.WriteLine($"As expected, I saw: {tabitem}");
+                }
+                else
+                {
+                    Console.WriteLine($"I could NOT locate the item: {tabitem}");
+                    TakeScreenshot.SaveScreenshot();
+                    var pageNavigationElementException = $"I expected {tabitem} but it was not located";
+                    throw new Exception(pageNavigationElementException);
+                }
+            }
+        }
+
+        public static void TopNavigationLinksCheck()
+        // THIS IS JUST A TEST OF HOW TO CHECK FOR DIFFERENCES IN LINK SETS ON THE PAGE
+        {
+
+            // Get all of the known links from our enum/dictionary in eMBEDNavigation.cs
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("The links in our known set are:");
+            int i = 1;
+            foreach (var item in eMBEDDashboardPageItems.TabLinkURL.Keys)
+            {
+                Console.WriteLine($"     {i}: {item}");
+                i++;
+            }
+
+            //Then get the links from the webpage
+            var locateTheLinkSection = Driver.Instance.FindElement(By.XPath("//ul[@class='nav nav-tabs']"));
+            var actuaLinkSetCount = locateTheLinkSection.FindElements(By.TagName("a"));
+
+            List<string> actualLinkList = new List<string>();
+
+            foreach (var item in actuaLinkSetCount)
+            {
+                if (item.Displayed)
+                {
+                    actualLinkList.Add(item.Text);
+                }
+
+                if (!item.Displayed)
+                {
+                    Console.WriteLine($"There was also a link for:{0}, but no link text was displayed", item.Text);
+                }
+            }
+
+            //var someContentOnThePage = Driver.Instance.PageSource.Contains("");
+
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("The links set on the page are:");
+            int a = 1;
+            foreach (var link in actualLinkList)
+            {
+                Console.WriteLine($"     {a}: {link}");
+                a++;
+            }
+        }
+
     }
+
 }
