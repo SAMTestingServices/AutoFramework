@@ -4,6 +4,7 @@ using DRFosterAutomationFramework.Helpers;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 // Page presented to a user post log-in
 
@@ -13,11 +14,10 @@ namespace DRFosterAutomationFramework.eMBED_Pages
     {
         public static void validateTopBarNavigationIsPresent()
         {
-            bool topNavIdName = Driver.Instance.PageSource.Contains(eMBEDDashboardPageItems.NavElementName[eMBEDTopNavElements.Logo]);
-
+            bool topNavIdName = Driver.Instance.PageSource.Contains("container-fluid navbar-fixed-top navigation-container");
             if (topNavIdName == true)
             {
-                Console.WriteLine($"The check for ID of 'logo' being present came back as: {topNavIdName.ToString().ToUpper()}");
+                Console.WriteLine($"The check for Nav Container CSS being present came back as:{topNavIdName}"); 
             }
             else
             {
@@ -34,7 +34,7 @@ namespace DRFosterAutomationFramework.eMBED_Pages
             {
                 if (IsElementPresent(By.Id(item)))
                 {
-                    Console.WriteLine($"As expected, I saw and element with the ID of: {item}");
+                    Console.WriteLine($"As expected, I saw an element with the ID of: {item}");
                 }
                 else
                 {
@@ -65,49 +65,71 @@ namespace DRFosterAutomationFramework.eMBED_Pages
             }
         }
 
-        public static void TopNavigationLinksCheck()
-        // THIS IS JUST A TEST OF HOW TO CHECK FOR DIFFERENCES IN LINK SETS ON THE PAGE
+        public static void TopNavigationLinksURLCheck()
         {
-
-            // Get all of the known links from our enum/dictionary in eMBEDNavigation.cs
-            Console.WriteLine("-----------------------------");
-            Console.WriteLine("The links in our known set are:");
+            Console.WriteLine("-------------------");
             int i = 1;
-            foreach (var item in eMBEDDashboardPageItems.TabLinkURL.Keys)
+            char let = 'a';
+            foreach (var item in eMBEDDashboardPageItems.TabLinkURL.Values)
             {
-                Console.WriteLine($"     {i}: {item}");
+                Console.WriteLine($"     {i}{let}: I expected {item}");
+
+                bool matchingItemInThePageSource = Driver.Instance.PageSource.Contains(item);
+                if (matchingItemInThePageSource == true)
+                {
+                    Console.WriteLine($"         {i}{let}: In the page source I saw {item}");
+                    Console.WriteLine("-------");
+                    i++;
+                    let++;
+                }
+                else
+                {
+                    Console.WriteLine($"FAIL as I saw {matchingItemInThePageSource} and could NOT locate the item: {item}");
+                    TakeScreenshot.SaveScreenshot();
+                    var pageNavigationElementException = $"I expected {item} but it was not located";
+                    throw new Exception(pageNavigationElementException);
+                }
+            }
+        }
+
+//------------
+        public static void TopNavigationLinkTextCheck()
+        {
+            //Get all the links from the webpage, whether they have link-text on the screen or not
+            var locateTheLinkSection = Driver.Instance.FindElement(By.XPath("//ul[@class='nav nav-tabs']"));
+            var setOfLinksOnThePage = locateTheLinkSection.FindElements(By.TagName("a"));
+
+            List<string> onPageLinkList = new List<string>();
+
+            int i = 1;
+            foreach (var item in setOfLinksOnThePage)
+            {
+               // Console.WriteLine("The following link text was displayed on the page");
+                if (item.Displayed)
+                {
+                    onPageLinkList.Add(item.Text);
+                    Console.WriteLine($"     {i}: {item.Text}");
+                }
+
+                //Console.WriteLine("The following are in the code, but not displayed on the page");
+                if (!item.Displayed)  
+                {
+                    Console.WriteLine($"     {i}: There was also a link for: {item}, but no link text was displayed");
+                }
                 i++;
             }
 
-            //Then get the links from the webpage
-            var locateTheLinkSection = Driver.Instance.FindElement(By.XPath("//ul[@class='nav nav-tabs']"));
-            var actuaLinkSetCount = locateTheLinkSection.FindElements(By.TagName("a"));
-
-            List<string> actualLinkList = new List<string>();
-
-            foreach (var item in actuaLinkSetCount)
-            {
-                if (item.Displayed)
-                {
-                    actualLinkList.Add(item.Text);
-                }
-
-                if (!item.Displayed)
-                {
-                    Console.WriteLine($"There was also a link for:{0}, but no link text was displayed", item.Text);
-                }
-            }
-
-            //var someContentOnThePage = Driver.Instance.PageSource.Contains("");
+            //------------
 
             Console.WriteLine("-----------------------------");
-            Console.WriteLine("The links set on the page are:");
+            Console.WriteLine("The text links set on the page are:");
             int a = 1;
-            foreach (var link in actualLinkList)
+            foreach (var link in onPageLinkList)
             {
                 Console.WriteLine($"     {a}: {link}");
                 a++;
             }
+
         }
 
     }
