@@ -53,13 +53,15 @@ namespace DRFosterAutomationFramework.eMBED_Pages.eMBED_Elements
         public static IDictionary<eMBEDNavigation, string> TabLinkURL
             = new Dictionary<eMBEDNavigation, string>
               {
-                    { eMBEDNavigation.SAR, "http://testing05:50000/mbed#/performance" },
-                    { eMBEDNavigation.RiskStratification, "http://testing05:50000/mbed#/riskstratificationoverview" },
-                    { eMBEDNavigation.GPOS, "http://testing05:50000/mbed#/gpos" },
-                    { eMBEDNavigation.Performance, "http://testing05:50000/mbed/performance" }
+                    { eMBEDNavigation.SAR, "#/performance" },
+                    { eMBEDNavigation.RiskStratification, "#/riskstratification" },
+                    { eMBEDNavigation.RiskOverview, "#/riskstratificationoverview" },
+                    { eMBEDNavigation.RiskStratificationOverview, "#/riskstratification" },
+                    { eMBEDNavigation.GPOS, "#/gpos" },
+                    { eMBEDNavigation.Performance, "mbed/performance" }
               };
 
-// #####################################################################################################
+        // #####################################################################################################
 
         // Main content area with ID of main
 
