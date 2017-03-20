@@ -7,6 +7,11 @@
             get { return "http://testing05:50000/mbed"; }
         }
 
+        public static string embedDevUrl
+        {
+            get { return "http://devbuild05:50000/mbed"; }
+        }
+
         public static string myDrFosterTestUrl
         { 
            get { return "http://testing05";  }         
@@ -17,5 +22,4 @@
             get { return "https://my.drfoster.co.uk/"; }
         }
     }
-
 }
