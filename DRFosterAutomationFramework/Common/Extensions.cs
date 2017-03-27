@@ -34,9 +34,17 @@ namespace DRFosterAutomationFramework.Common
             }
         }
 
-        public static void CountTheElements()
+        public static void FindAndClickElement(By by)
         {
-            //
+            try
+            {
+                var theElement = Driver.Instance.FindElement(by);
+                theElement.Click();
+            }
+            catch (NoSuchElementException)
+            {
+                Console.WriteLine($"I couldn't find the element {by}");
+            }
         }
 
     }
