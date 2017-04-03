@@ -32,6 +32,8 @@ namespace DRFosterAutomationFramework.eMBED_Pages
         
         public static void ConfirmWeAreLoggedInToTheEmbedHomePage()
         {
+            System.Threading.Thread.Sleep(5000); // HACK: hard coded wait
+
             var expectedPageTitle = "Dashboard - eMbed";
             var actualPageTitle = Driver.Instance.Title;
 
