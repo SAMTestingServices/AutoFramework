@@ -1,8 +1,10 @@
-﻿using DRFosterAutomationFramework.Common;
-using DRFosterAutomationFramework.Helpers;
+﻿//using DRFosterAutomationFramework.Common;
+using Framework.Common;
+//using Framework.Helpers;
 using OpenQA.Selenium;
 using System;
 
+/**
 namespace DRFosterAutomationFramework.HUBPages
 {
     public class LoginPage
@@ -90,3 +92,4 @@ namespace DRFosterAutomationFramework.HUBPages
     }
 
 }
+    **/

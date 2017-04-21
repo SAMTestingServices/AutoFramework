@@ -71,15 +71,15 @@ namespace eMBEDAutomationTests.Workflows.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A user can successfully login to eMBED", new string[] {
                         "smoke"});
-#line 8
+#line 7
 this.ScenarioSetup(scenarioInfo);
-#line 9
+#line 8
  testRunner.Given("I have navigated to the eMBED website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
+#line 9
  testRunner.When("I enter my username and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
+#line 10
  testRunner.And("I click on the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 12
+#line 11
  testRunner.Then("I am logged into the eMbed dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

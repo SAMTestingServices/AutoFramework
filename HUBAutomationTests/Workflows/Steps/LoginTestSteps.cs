@@ -1,11 +1,12 @@
-﻿using DRFosterAutomationFramework.Common;
+﻿//using DRFosterAutomationFramework.Common;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DRFosterAutomationFramework.HUBPages;
+//using DRFosterAutomationFramework.HUBPages;
 using System.Configuration;
 using System;
 
 // Log-in Smoke test without SpecFlow
 
+    /**
 namespace HUBAutomationTests.Workflows.Steps
 {
     [TestClass]
@@ -27,3 +28,5 @@ namespace HUBAutomationTests.Workflows.Steps
         }
     }
 }
+
+    **/

@@ -1,0 +1,12 @@
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\DRFosterAutomationFramework.dll.config
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\DRFosterAutomationFramework.dll
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\DRFosterAutomationFramework.pdb
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\nunit.framework.dll
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\WebDriver.dll
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\WebDriver.Support.dll
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\nunit.framework.xml
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\WebDriver.xml
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\bin\Debug\WebDriver.Support.xml
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\obj\Debug\DRFosterAutomationFramework.dll
+C:\Users\gshm\Downloads\ArcTestFramework\DRFosterAutomationFramework\obj\Debug\DRFosterAutomationFramework.pdb

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DRFosterAutomationFramework.Common
+namespace Framework.Common
 {
     [TestClass]
     public class SharedBasis
@@ -9,7 +9,7 @@ namespace DRFosterAutomationFramework.Common
         [TestInitialize]
         public void StartDriverAndLaunchTheBrowser()
         {
-            var chosenBrowser = Browser.Firefox;
+            var chosenBrowser = Browser.Chrome;
             Driver.LaunchTheBrowser(chosenBrowser.ToString());
             Console.WriteLine("I launched the {0} browser", chosenBrowser);
         }

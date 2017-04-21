@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.UI;
 
 // Methods to extend Selenium functionality
 
-namespace DRFosterAutomationFramework.Common
+namespace Framework.Common
 {
     public class Extensions
     {

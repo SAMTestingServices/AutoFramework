@@ -1,8 +1,10 @@
-﻿using DRFosterAutomationFramework.Common;
+﻿//using DRFosterAutomationFramework.Common;
 using OpenQA.Selenium;
 using System;
 using System.Drawing.Imaging;
 
+
+/**
 namespace DRFosterAutomationFramework.Helpers
 {
     class TakeScreenshot
@@ -40,3 +42,5 @@ namespace DRFosterAutomationFramework.Helpers
 
     }
 }
+
+    **/

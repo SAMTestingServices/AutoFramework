@@ -1,25 +1,17 @@
-﻿namespace DRFosterAutomationFramework.Common
+﻿namespace Framework.Common
 {
     public class AddressList
     {
-        public static string embedTestUrl
+        public static string ArcTestUrl
         {
-            get { return "http://testing05:50000/mbed"; }
+            get { return "https://arc.test.clarksons.com"; }
         }
 
-        public static string embedDevUrl
+            public static string ArcTestUat
         {
-            get { return "http://devbuild05:50000/mbed"; }
+            get { return "https://arc.uatdmz.clarksons.com"; }
         }
 
-        public static string myDrFosterTestUrl
-        { 
-           get { return "http://testing05";  }         
-        }
 
-        public static string BaseURLLive
-        {
-            get { return "https://my.drfoster.co.uk/"; }
-        }
     }
 }

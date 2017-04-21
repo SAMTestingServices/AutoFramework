@@ -5,7 +5,7 @@ using OpenQA.Selenium.IE;
 using System;
 using System.Drawing;
 
-namespace DRFosterAutomationFramework.Common
+namespace Framework.Common
 {
    
     public class Driver
